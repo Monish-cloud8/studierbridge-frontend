@@ -1,0 +1,151 @@
+.find-mentee-container {
+  min-height: 100vh;
+  background: #f5f7fa;
+  padding-bottom: 40px;
+}
+
+.find-mentee-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 30px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.find-mentee-header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.back-btn {
+  background: white;
+  color: #667eea;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: transform 0.2s;
+  border: none;
+  cursor: pointer;
+}
+
+.back-btn:hover {
+  transform: scale(1.05);
+}
+
+.mentees-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.mentee-card {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.mentee-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.mentee-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #66bb6a 0%, #43a047 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0 auto 20px;
+}
+
+.mentee-card h3 {
+  margin: 15px 0 10px;
+  color: #333;
+  font-size: 22px;
+}
+
+.mentee-grade,
+.mentee-email {
+  color: #666;
+  margin: 8px 0;
+  font-size: 15px;
+}
+
+.mentee-email {
+  font-size: 13px;
+  color: #999;
+}
+
+.mentee-subjects {
+  margin: 15px 0;
+  text-align: left;
+}
+
+.mentee-subjects strong {
+  display: block;
+  color: #333;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.subject-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.subject-tag {
+  background: #e8f5e9;
+  color: #2e7d32;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.no-subjects {
+  color: #999;
+  font-style: italic;
+  font-size: 13px;
+  margin: 10px 0;
+}
+
+.contact-btn {
+  background: #66bb6a;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 15px;
+  width: 100%;
+  transition: background 0.3s;
+}
+
+.contact-btn:hover {
+  background: #57a85a;
+}
+
+.no-mentees {
+  text-align: center;
+  color: #999;
+  font-size: 18px;
+  padding: 50px;
+  grid-column: 1 / -1;
+}

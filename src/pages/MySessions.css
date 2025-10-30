@@ -1,0 +1,167 @@
+.my-sessions-container {
+  min-height: 100vh;
+  background: #f5f7fa;
+}
+
+.sessions-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 30px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sessions-header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.sessions-content {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.no-sessions {
+  text-align: center;
+  padding: 60px 20px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.no-sessions h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.no-sessions p {
+  color: #666;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.find-mentor-btn {
+  background: #667eea;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.find-mentor-btn:hover {
+  background: #5568d3;
+}
+
+.sessions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.session-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.session-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.session-header-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.session-header-info h3 {
+  margin: 0;
+  color: #333;
+  font-size: 22px;
+}
+
+.status-badge {
+  padding: 6px 15px;
+  border-radius: 20px;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.session-details p {
+  margin: 10px 0;
+  color: #666;
+  font-size: 15px;
+}
+
+.session-message {
+  background: #f5f7fa;
+  padding: 12px;
+  border-radius: 8px;
+  margin: 15px 0;
+}
+
+.session-date {
+  color: #999;
+  font-size: 13px;
+  margin-top: 15px;
+}
+
+.session-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.btn-accept,
+.btn-decline {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-accept {
+  background: #66bb6a;
+  color: white;
+}
+
+.btn-accept:hover {
+  background: #57a85a;
+}
+
+.btn-decline {
+  background: #ef5350;
+  color: white;
+}
+
+.btn-decline:hover {
+  background: #e53935;
+}
+
+.session-scheduled {
+  background: #e3f2fd;
+  padding: 12px;
+  border-radius: 8px;
+  border-left: 4px solid #2196f3;
+  margin: 15px 0;
+  font-size: 15px;
+  color: #0d47a1;
+}
