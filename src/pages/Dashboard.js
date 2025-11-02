@@ -9,19 +9,19 @@ function Dashboard() {
   const [unreadCount, setUnreadCount] = useState(0);
 
   useEffect(() => {
-    // Get user data from localStorage
-    const storedUser = localStorage.getItem('user');
-    const token = localStorage.getItem('token');
-    
-    // If no user or token, redirect to login
-    if (!storedUser || !token) {
-      navigate('/login');
-      return;
-    }
-    
-    // Parse and set user data
-    setUser(JSON.parse(storedUser));
-  }, [navigate]);
+  // Get user data from localStorage
+  const storedUser = localStorage.getItem('user');
+  const token = localStorage.getItem('token');
+  
+  // If no user or token, redirect to login
+  if (!storedUser || !token) {
+    navigate('/login');
+    return;
+  }
+  
+  // Parse and set user data
+  setUser(JSON.parse(storedUser));
+}, [navigate]);
 
   useEffect(() => {
     const fetchNotificationCount = async () => {
