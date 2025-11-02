@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'process.env.REACT_APP_API_URL';
+const API_BASE_URL = 'https://studierbridge-backend-production.up.railway.app/api';
 // Signup API call
 export const signup = async (userData) => {
   try {
